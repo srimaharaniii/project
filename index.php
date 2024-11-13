@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-  
+
 <?php include_once ('navbar.php');
 
 ?>
 <div class="container">
     <div clas="row mt-">
         <div class="col-6 m-auto">
-            <div class="card">
+            <div class="card m-auto">
             <div class="card-header text-center">
                 <h3>Sistem Informasi Mahasiswa</h3>
             </div>
