@@ -2,7 +2,7 @@
 #1 koneksi file ini
 include("../koneksi.php");
 
-#2 mengambil value daro form
+#2 mengambil value dari form
 $kd = $_POST['kode'];
 $jrs = $_POST['jurusan'];
 
