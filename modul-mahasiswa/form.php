@@ -65,12 +65,6 @@
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Dosen Wali</label>
-                    <select name="jabatan" class="form-control" id="">
-                        <option value="">-Pilih Dosen Wali-</option>
-                    </select>
-                </div>
-                <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Foto</label>
                     <input type="file" name="nama" class="form-control" id="exampleInputPassword1">
                 </div>
