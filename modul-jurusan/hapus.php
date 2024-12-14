@@ -15,7 +15,7 @@ $proses = mysqli_query($koneksi,$hapus);
 #5 mengalihkan halaman
 // header("location:index.php");
 ?>
-
+ 
 <script>
     document.location="index.php";
 </script>
