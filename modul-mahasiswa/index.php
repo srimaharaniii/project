@@ -39,7 +39,7 @@
                     include("../koneksi.php");
 
                     #2. menulis query
-                    $tampil = "SELECT * FROM mahasiswas";
+                    $tampil = "SELECT *, mahasiswas.nama as nm_mhs, dosens.nama as nm_dos FROM mahasiswas INNER JOIN jurusans ON mahasiswas.jurusans_id=jurusans.id INNER JOIN dosens ON mahasiswas.dosens_id=dosens.id";
 
                     #3. jalankan query
                     $proses = mysqli_query($koneksi, $tampil);
@@ -51,10 +51,10 @@
                     <tr>
                         <th scope="row"><?=$nomor++?></th>
                         <td><?=$data['nim']?></td>
-                        <td><?=$data['nama']?></td>
+                        <td><?=$data['nm_mhs']?></td>
                         <td><?=$data['jk']?></td>
-                        <td><?=$data['jurusans_id']?></td>
-                        <td><?=$data['dosens_id']?></td>
+                        <td><?=$data['jurusan']?></td>
+                        <td><?=$data['nm_dos']?></td>
                         <td>
                             <a class="btn btn-info btn-sm" href="edit.php?id=<?=$data['id']?>"><i class="fa fa-pen-to-square"></i></a>
                             
